@@ -1,7 +1,7 @@
 public class Personne {
 
     /** Nom de la personne */
-    private String nom;
+    protected String nom;
 
     /** Quantité d'argent en possession de la personne */
     private int argent;

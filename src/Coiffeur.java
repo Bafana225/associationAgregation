@@ -17,6 +17,13 @@ public class Coiffeur {
         clients.add(client);
     }
 
+    public void recevoirPaiement(Client client, int somme) {
+        argent += somme;
+        client.payer(somme, this); // Passer l'objet Coiffeur en tant que deuxième argument
+        System.out.println("Le coiffeur " + nom + " a reçu un paiement de " + somme + " euros de la part du client " + client.getNom() + ".");
+    }
+
+
     public void renvoyerClient(Client client) {
         clients.remove(client);
     }
